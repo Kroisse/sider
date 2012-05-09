@@ -1,8 +1,8 @@
 Sider
 =====
 
-Sider is a persistent object library based on Redis_.  This is being planned
-and heavily under development currently.
+Sider is a persistent object library based on Redis_.  This is heavily under
+development currently, but you can check the `future roadmap`__ if you want.
 
 .. sourcecode:: pycon
 
@@ -22,6 +22,15 @@ and heavily under development currently.
    >>> session.get('my_int_key', Integer)
    1234
 
+You can install it from PyPI_:
+
+.. sourcecode:: console
+
+   $ pip install Sider  # or
+   $ easy_install Sider
+   $ python -m sider.version
+   0.2.0
+
 What was the name 'Sider' originated from?:
 
 .. sourcecode:: pycon
@@ -29,6 +38,8 @@ What was the name 'Sider' originated from?:
    >>> 'redis'[::-1]
    'sider'
 
+__ http://sider.dahlia.kr/en/latest/roadmap.html
+.. _PyPI: http://pypi.python.org/pypi/Sider
 .. _Redis: http://redis.io/
 
 
@@ -47,9 +58,11 @@ Further reading
 .. toctree::
    :maxdepth: 2
 
+   examples
    doc
-   memo
    todo
+   roadmap
+   changes
 
 
 Open source
@@ -69,6 +82,12 @@ __ http://dahlia.kr/
 __ http://minhee.mit-license.org/
 __ https://bitbucket.org/dahlia/sider
 __ https://bitbucket.org/dahlia/sider/issues
+
+
+Community
+---------
+
+Sider has the official IRC channel on freenode: irc://chat.freenode.net/sider
 
 
 Indices and tables
